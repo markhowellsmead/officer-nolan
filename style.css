@@ -103,3 +103,11 @@ body.single .wp-block-post-featured-image {
 body.admin-bar .site-header {
 	top: var(--wp-admin--admin-bar--height);
 }
+
+.site-content {
+	margin-top: 80px !important;
+}
+
+body.post-template-single-cover .site-content {
+	margin-top: 0 !important;
+}
