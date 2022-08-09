@@ -92,6 +92,24 @@ body.single .wp-block-post-featured-image {
 	margin-block-start:var(--wp--style--block-gap);
 }
 
+.wp-block-quote {
+	box-shadow: 5px 5px var(--wp--preset--color--main);
+}
+
+.wp-block-quote.is-style-plain {
+	border-width: 0 !important;
+	box-shadow: none;
+}
+
+.wp-block-quote cite {
+	font-style: italic;
+}
+
+.wp-block-quote cite::before {
+	content: '—';
+	margin-right: 1ch;
+}
+
 .site-header {
 	position: fixed;
 	top: 0;
@@ -105,9 +123,13 @@ body.admin-bar .site-header {
 }
 
 .site-content {
-	margin-top: 80px !important;
+	margin-top: calc(80px + 1.5vw) !important;
 }
 
 body.post-template-single-cover .site-content {
 	margin-top: 0 !important;
+}
+
+body.post-template-single-no-thumbnail .site-content {
+	margin-top: calc(80px + 3vw) !important;
 }
