@@ -75,6 +75,11 @@
                     "gradient": "linear-gradient(135deg,rgba(0,0,0,1) 50%,var(--wp--preset--color--tertiary) 100%)",
                     "name": "Black to Tertiary",
                     "slug": "black-tertiary"
+                },
+                {
+                    "gradient": "linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,1) 100%)",
+                    "name": "Transparent to black",
+                    "slug": "transparent-to-black"
                 }
             ],
             "palette": [
