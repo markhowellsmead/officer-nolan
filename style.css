@@ -1,0 +1,93 @@
+/*
+Theme Name: Officer Nolan
+Theme URI: https://permanenttourist.ch/officer-nolan/
+Author: Mark Howells-Mead
+Author URI: https://permanenttourist.ch/
+Description: 
+Tags: accessibility-ready, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, full-site-editing, one-column, template-editing, threaded-comments, translation-ready, wide-blocks
+Requires at least: 6.0
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: officer-nolan
+*/
+
+
+/* Defaults
+---------------------------------------------------------------------------- */
+
+html {
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="submit"],
+textarea:focus,
+.wp-block-button__link {
+	transition: all 0.2s ease-in-out;
+}
+
+a,
+a:focus,
+a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.15rem;
+}
+
+h1 a, h2 a,h3 a,h4 a,h5 a,h6 a,.wp-block-post-title a {
+	text-decoration: none;
+}
+
+.wp-block-comment-author-name a {
+	text-decoration: none;
+}
+
+.wp-block-image {
+	text-align: center; /* Make sure narrower images are centered */
+}
+
+.wp-element-caption,
+.wp-block-audio figcaption,
+.wp-block-embed figcaption,
+.wp-block-gallery figcaption,
+.wp-block-image figcaption,
+.wp-block-table figcaption,
+.wp-block-video figcaption {
+	color: inherit;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.wp-block-post-featured-image {
+	aspect-ratio: 3/2;
+}
+
+body.single .wp-block-post-featured-image {
+	aspect-ratio: auto;
+}
+.wp-block-post-featured-image a, .wp-block-post-featured-image img {
+	height:100%;
+	object-fit: cover;
+}
+
+.wp-block-post-template .wp-block-post > * {
+	margin-block-start:0;
+	margin-block-end:0;
+}
+
+.wp-block-post-template .wp-block-post > * + * {
+	margin-block-start:var(--wp--style--block-gap);
+}
