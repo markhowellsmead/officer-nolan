@@ -1,0 +1,66 @@
+nav a {
+  text-decoration: none;
+}
+
+.c-main {
+  margin-top: calc(var(--masthead--height) + 3vw) !important;
+}
+body.post-template-single-cover .c-main {
+  margin-top: var(--masthead--height) !important;
+}
+@media screen and (min-width: 1440px) {
+  body.post-template-single-no-thumbnail .c-main {
+    margin-top: calc(var(--masthead--height) + 6vw) !important;
+  }
+}
+
+:root {
+  --masthead--height: 80px;
+}
+
+.c-masthead {
+  --masthead--background-color: var(--wp--preset--color--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: var(--masthead--background-color);
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  .c-masthead {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: none;
+  }
+}
+body.admin-bar .c-masthead {
+  top: var(--wp-admin--admin-bar--height);
+}
+.c-masthead > * {
+  position: relative;
+  z-index: 1;
+}
+.c-masthead a {
+  text-decoration: none;
+}
+.c-masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  z-index: 0;
+  background-color: var(--masthead--background-color);
+  opacity: 0.9;
+}
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  .c-masthead::before {
+    opacity: 0.75;
+  }
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19nZW5lcmFsL190eXBvZ3JhcGh5LnNjc3MiLCJfX19jb21wb25lbnRzL19tYWluLnNjc3MiLCJfX19jb21wb25lbnRzL19tYXN0aGVhZC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNDO0VBQ0M7OztBQ0ZGO0VBQ0M7O0FBRUE7RUFDQzs7QUFJQTtFQUREO0lBRUU7Ozs7QUNUSDtFQUNDOzs7QUFHRDtFQUNDO0VBRUE7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQVpEO0lBYUU7SUFDQTtJQUNBOzs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTs7QUFHRDtFQUNDOztBQUdEO0VBQ0M7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFaRDtJQWFFIiwiZmlsZSI6InVpLmNzcyJ9 */

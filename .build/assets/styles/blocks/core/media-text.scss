@@ -1,0 +1,12 @@
+@import '../../_____settings/all.settings';
+
+.wp-block-media-text {
+	&__content {
+		@extend %h-stack;
+
+		.has-background > & {
+			padding-top: calc(var(--wp--style--block-gap) * 2);
+			padding-bottom: calc(var(--wp--style--block-gap) * 2);
+		}
+	}
+}

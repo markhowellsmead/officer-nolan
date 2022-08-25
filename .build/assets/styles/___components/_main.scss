@@ -1,0 +1,13 @@
+.c-main {
+	margin-top: calc(var(--masthead--height) + 3vw) !important;
+
+	body.post-template-single-cover & {
+		margin-top: var(--masthead--height) !important;
+	}
+
+	body.post-template-single-no-thumbnail & {
+		@media screen and (min-width: 1440px) {
+			margin-top: calc(var(--masthead--height) + 6vw) !important;
+		}
+	}
+}
