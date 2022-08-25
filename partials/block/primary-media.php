@@ -16,15 +16,31 @@ switch ($align) {
 
 $content = '';
 
-if (has_post_thumbnail($post_id)) {
+if (!empty($video_url = get_field('video_ref', $post_id))) {
 
+	if (is_singular('post') || is_singular('page')) {
+		$video_player = wp_oembed_get($video_url);
+
+		$content = sprintf(
+			'<figure class="%1$s__figure %1$s__figure--video">%2$s</figure>',
+			$classNameBase,
+			$video_player,
+		);
+	} else {
+		$content = sprintf(
+			'<figure class="%1$s__figure %1$s__figure--%2$s"><a href="%5$s"><img class="%1$s__image" src="%3$s" alt="%4$s" /></a></figure>',
+			$classNameBase,
+			$media_size,
+			pt_must_use_get_instance()->Package->Media->getVideoThumbnail($video_url),
+			get_the_title($post_id),
+			get_the_permalink($post_id)
+		);
+	}
+} elseif (has_post_thumbnail($post_id)) {
 	$image = wp_get_attachment_image(get_post_thumbnail_id($post_id), $media_size, false, ['class' => "{$classNameBase}__image"]);
 
 	if (!empty($image)) {
-		ob_start();
-		printf('<figure class="%1$s__figure %1$s__figure--%2$s">%3$s</figure>', $classNameBase, $media_size, $image);
-		$content = ob_get_contents();
-		ob_end_clean();
+		$content = sprintf('<figure class="%1$s__figure %1$s__figure--%2$s">%3$s</figure>', $classNameBase, $media_size, $image);
 	}
 }
 
