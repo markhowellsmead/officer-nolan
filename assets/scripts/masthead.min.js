@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector(".c-masthead"),t=()=>{document.documentElement.style.setProperty("--masthead--height",e.offsetHeight-1+"px")};t(),window.addEventListener("resize",t),window.addEventListener("orientationchange",t)})();

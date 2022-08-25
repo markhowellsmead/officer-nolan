@@ -16,12 +16,12 @@ const config = {
 };
 
 import { task as taskStyles } from './.build/gulp/task-styles';
-// import { task as taskScripts } from './.build/gulp/task-scripts';
+import { task as taskScripts } from './.build/gulp/task-scripts';
 // import { task as taskSvg } from './.build/gulp/task-svg';
 import { task as taskGutenberg } from './.build/gulp/task-gutenberg';
 
 export const styles = () => taskStyles(config);
-// export const scripts = () => taskScripts(config);
+export const scripts = () => taskScripts(config);
 // export const svg = () => taskSvg(config);
 export const gutenberg = () => taskGutenberg(config);
 
@@ -34,11 +34,11 @@ export const watch = () => {
 		gulp.series(styles)
 	);
 
-	// gulp.watch(
-	// 	config.assetsBuild + 'scripts/**/*.{scss,css,js}',
-	// 	settings,
-	// 	gulp.series(scripts)
-	// );
+	gulp.watch(
+		config.assetsBuild + 'scripts/**/*.{scss,css,js}',
+		settings,
+		gulp.series(scripts)
+	);
 
 	gulp.watch(
 		config.assetsBuild + 'gutenberg/**/*.{scss,css,js,jsx}',
@@ -52,11 +52,11 @@ export const watch = () => {
 	// 	gulp.series(gutenberg, scripts, styles)
 	// );
 
-	// gulp.watch(
-	// 	config.themeDir + 'theme.json',
-	// 	settings,
-	// 	gulp.series(gutenberg, scripts, styles)
-	// );
+	gulp.watch(
+		config.themeDir + 'theme.json',
+		settings,
+		gulp.series(gutenberg, scripts, styles)
+	);
 
 	// gulp.watch(
 	// 	[

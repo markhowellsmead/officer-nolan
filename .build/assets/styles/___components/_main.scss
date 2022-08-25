@@ -1,13 +1,16 @@
 .c-main {
-	margin-top: calc(var(--masthead--height) + 3vw) !important;
+	--main--offset: 3vw;
+
+	margin-top: calc(var(--masthead--height) + var(--main--offset)) !important;
 
 	body.post-template-single-cover & {
-		margin-top: var(--masthead--height) !important;
+		--main--offset: 0;
 	}
 
-	body.post-template-single-no-thumbnail & {
+	body.post-template-single-no-thumbnail &,
+	body.archive & {
 		@media screen and (min-width: 1440px) {
-			margin-top: calc(var(--masthead--height) + 6vw) !important;
+			--main--offset: 63vw;
 		}
 	}
 }
