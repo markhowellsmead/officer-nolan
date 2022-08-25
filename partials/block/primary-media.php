@@ -27,20 +27,29 @@ if (!empty($video_url = get_field('video_ref', $post_id))) {
 			$video_player,
 		);
 	} else {
-		$content = sprintf(
-			'<figure class="%1$s__figure %1$s__figure--%2$s"><a href="%5$s"><img class="%1$s__image" src="%3$s" alt="%4$s" /></a></figure>',
-			$classNameBase,
-			$media_size,
-			pt_must_use_get_instance()->Package->Media->getVideoThumbnail($video_url),
-			get_the_title($post_id),
-			get_the_permalink($post_id)
-		);
+
+		$thumbnail = pt_must_use_get_instance()->Package->Media->getVideoThumbnail($video_url);
+
+		if (!empty($thumbnail)) {
+			$content = sprintf(
+				'<figure class="%1$s__figure %1$s__figure--%2$s"><a href="%5$s"><img class="%1$s__image" src="%3$s" alt="%4$s" /></a></figure>',
+				$classNameBase,
+				$media_size,
+				pt_must_use_get_instance()->Package->Media->getVideoThumbnail($video_url),
+				get_the_title($post_id),
+				get_the_permalink($post_id)
+			);
+		}
 	}
 } elseif (has_post_thumbnail($post_id)) {
 	$image = wp_get_attachment_image(get_post_thumbnail_id($post_id), $media_size, false, ['class' => "{$classNameBase}__image"]);
 
 	if (!empty($image)) {
-		$content = sprintf('<figure class="%1$s__figure %1$s__figure--%2$s">%3$s</figure>', $classNameBase, $media_size, $image);
+		if (is_singular('post') || is_singular('page')) {
+			$content = sprintf('<figure class="%1$s__figure %1$s__figure--%2$s">%3$s</figure>', $classNameBase, $media_size, $image);
+		} else {
+			$content = sprintf('<figure class="%1$s__figure %1$s__figure--%2$s"><a href="%4$s">%3$s</a></figure>', $classNameBase, $media_size, $image, get_the_permalink($post_id));
+		}
 	}
 }
 
