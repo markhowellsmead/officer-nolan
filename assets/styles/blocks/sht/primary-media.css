@@ -1,0 +1,11 @@
+.wp-block-post-template .wp-block-sht-primary-media__figure {
+  aspect-ratio: 3/2;
+}
+.wp-block-sht-primary-media__image {
+  width: 100%;
+}
+.wp-block-post-template .wp-block-sht-primary-media__image {
+  height: 100%;
+  object-fit: cover;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9zaHQvcHJpbWFyeS1tZWRpYS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVFO0VBQ0M7O0FBSUY7RUFDQzs7QUFFQTtFQUNDO0VBQ0EiLCJmaWxlIjoiYmxvY2tzL3NodC9wcmltYXJ5LW1lZGlhLmNzcyJ9 */
