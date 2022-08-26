@@ -153,24 +153,6 @@
 							"fontFamily": "Archivo",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
-							"fontWeight": "300",
-							"src": [
-								"file:./assets/fonts/archivo-v18-latin-300.woff2"
-							]
-						},
-						{
-							"fontFamily": "Archivo",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "300",
-							"src": [
-								"file:./assets/fonts/archivo-v18-latin-300italic.woff2"
-							]
-						},
-						{
-							"fontFamily": "Archivo",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
 								"file:./assets/fonts/archivo-v18-latin-regular.woff2"
