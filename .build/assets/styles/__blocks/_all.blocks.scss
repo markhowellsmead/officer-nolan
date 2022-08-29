@@ -1,4 +1,21 @@
+.wp-block-post-template.is-flex-container.is-flex-container,
+.wp-block-query-loop.is-flex-container.is-flex-container {
+	display: grid;
+	gap: var(--wp--style--block-gap);
+
+	&.columns-3 {
+		@media screen and (min-width: 600px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		> li {
+			width: 100%;
+		}
+	}
+}
+
 // Temporary rules, added because auto block CSS loading doesn't always work...
+
 .wp-block-post-template .wp-block-post > * {
 	margin-block-start: 0;
 	margin-block-end: 0;
