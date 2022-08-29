@@ -55,6 +55,8 @@ class Theme
 	{
 		$this->loadClasses(
 			[
+				Block\CommentAuthorName::class,
+
 				Block\Menu::class,
 				Block\PrimaryMedia::class,
 				Package\Assets::class,
