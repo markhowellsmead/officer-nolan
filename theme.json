@@ -116,6 +116,11 @@
 					"color": "#f7f7f7",
 					"name": "Body background",
 					"slug": "body-background"
+				},
+				{
+					"color": "#0073aa",
+					"name": "WordPress blue",
+					"slug": "wordpress-blue"
 				}
 			]
 		},
@@ -580,7 +585,7 @@
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--dark-gray)"
+					"text": "var(--wp--preset--color--primary)"
 				}
 			}
 		},
