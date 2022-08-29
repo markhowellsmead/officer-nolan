@@ -1,3 +1,21 @@
+/**
+ * Use in order to make a set of rules only apply above
+ * or below a certain breakpoint.
+ * Standard usage:
+
+ @include breakpoint(tablet){
+ 	// Applies to screen sizes tablet and LARGER
+ }
+
+ @include breakpoint(tablet up){
+ 	// Applies to screen sizes tablet and LARGER
+ }
+
+ @include breakpoint(tablet down){
+ 	// Applies to screen sizes tablet and SMALLER
+ }
+ *
+ **/
 .wp-block-media-text__content > * {
   margin-top: 0;
   margin-bottom: 0;
@@ -10,4 +28,4 @@
   padding-top: calc(var(--wp--style--block-gap) * 2);
   padding-bottom: calc(var(--wp--style--block-gap) * 2);
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19fc2V0dGluZ3MvX3N0YWNrLnNjc3MiLCJibG9ja3MvY29yZS9tZWRpYS10ZXh0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0M7RUFDQztFQUNBOztBQUVBO0VBQ0M7OztBQ0FEO0VBQ0M7RUFDQSIsImZpbGUiOiJibG9ja3MvY29yZS9tZWRpYS10ZXh0LmNzcyJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9fX19fc2V0dGluZ3MvX2JyZWFrcG9pbnRzLnNjc3MiLCJfX19fX3NldHRpbmdzL19zdGFjay5zY3NzIiwiYmxvY2tzL2NvcmUvbWVkaWEtdGV4dC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdLQTtBQUFBO0FBQUE7QUFBQTs7QUFBQTtBQUFBO0FBQUE7O0FBQUE7QUFBQTtBQUFBOztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUMvSkM7RUFDQztFQUNBOztBQUVBO0VBQ0M7OztBQ0FEO0VBQ0M7RUFDQSIsImZpbGUiOiJibG9ja3MvY29yZS9tZWRpYS10ZXh0LmNzcyJ9 */
