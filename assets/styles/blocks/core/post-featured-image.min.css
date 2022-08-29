@@ -1,0 +1,1 @@
+@supports (aspect-ratio:3/2){.wp-block-post-featured-image{aspect-ratio:3/2}body.single .wp-block-post-featured-image{aspect-ratio:auto}.wp-block-post-featured-image a,.wp-block-post-featured-image img{height:100%;object-fit:cover}}

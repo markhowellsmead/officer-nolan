@@ -1,0 +1,13 @@
+// Temporary rules, added because auto block CSS loading doesn't always work...
+.wp-block-post-template .wp-block-post > * {
+	margin-block-start: 0;
+	margin-block-end: 0;
+
+	& + * {
+		margin-block-start: var(--wp--style--block-gap);
+	}
+}
+
+.wp-block-mhm-post-excerpt {
+	font-size: 1.2em;
+}

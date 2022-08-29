@@ -1,0 +1,19 @@
+.wp-block-quote {
+	box-shadow: 0.125em 0.125em var(--wp--preset--color--dark-gray);
+	&:not(.has-background) {
+		background-color: var(--wp--preset--color--white);
+	}
+
+	&.is-style-plain {
+		border-width: 0 !important;
+		box-shadow: none;
+	}
+
+	cite {
+		font-style: italic;
+		&::before {
+			content: '—';
+			margin-right: 1ch;
+		}
+	}
+}

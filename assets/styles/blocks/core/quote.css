@@ -1,0 +1,19 @@
+@charset "UTF-8";
+.wp-block-quote {
+  box-shadow: 0.125em 0.125em var(--wp--preset--color--dark-gray);
+}
+.wp-block-quote:not(.has-background) {
+  background-color: var(--wp--preset--color--white);
+}
+.wp-block-quote.is-style-plain {
+  border-width: 0 !important;
+  box-shadow: none;
+}
+.wp-block-quote cite {
+  font-style: italic;
+}
+.wp-block-quote cite::before {
+  content: "—";
+  margin-right: 1ch;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3F1b3RlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBO0VBQ0M7O0FBQ0E7RUFDQzs7QUFHRDtFQUNDO0VBQ0E7O0FBR0Q7RUFDQzs7QUFDQTtFQUNDO0VBQ0EiLCJmaWxlIjoiYmxvY2tzL2NvcmUvcXVvdGUuY3NzIn0= */

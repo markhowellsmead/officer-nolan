@@ -1,0 +1,11 @@
+.wp-block-columns {
+	gap: 30px;
+
+	&.is-style-gapless {
+		gap: 0;
+	}
+
+	&.is-style-narrow-gap {
+		gap: 15px;
+	}
+}

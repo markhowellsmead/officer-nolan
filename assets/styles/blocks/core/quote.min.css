@@ -1,0 +1,1 @@
+@charset "UTF-8";.wp-block-quote{box-shadow:.125em .125em var(--wp--preset--color--dark-gray)}.wp-block-quote:not(.has-background){background-color:var(--wp--preset--color--white)}.wp-block-quote.is-style-plain{border-width:0!important;box-shadow:none}.wp-block-quote cite{font-style:italic}.wp-block-quote cite::before{content:"—";margin-right:1ch}

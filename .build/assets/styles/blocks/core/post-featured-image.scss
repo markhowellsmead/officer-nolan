@@ -1,0 +1,15 @@
+.wp-block-post-featured-image {
+	@supports (aspect-ratio: 3/2) {
+		aspect-ratio: 3/2;
+
+		body.single & {
+			aspect-ratio: auto;
+		}
+
+		a,
+		img {
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.wp-block-columns {
+  gap: 30px;
+}
+.wp-block-columns.is-style-gapless {
+  gap: 0;
+}
+.wp-block-columns.is-style-narrow-gap {
+  gap: 15px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2NvbHVtbnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDOztBQUVBO0VBQ0M7O0FBR0Q7RUFDQyIsImZpbGUiOiJibG9ja3MvY29yZS9jb2x1bW5zLmNzcyJ9 */
