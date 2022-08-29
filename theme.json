@@ -44,7 +44,7 @@
 			"defaultPalette": false,
 			"duotone": [
 				{
-					"colors": ["#000", "#990099"],
+					"colors": ["#000", "#004ba6"],
 					"name": "Black and Primary",
 					"slug": "black-and-primary"
 				},
@@ -83,7 +83,7 @@
 			],
 			"palette": [
 				{
-					"color": "#990099",
+					"color": "#004ba6",
 					"name": "Primary",
 					"slug": "primary"
 				},
