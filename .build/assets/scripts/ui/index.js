@@ -1,3 +1,5 @@
+import './fancybox';
+
 // Load script if svh is not supported natively
 if (!CSS.supports || !CSS.supports('height', '1svh')) {
 	let script = document.createElement('script');
