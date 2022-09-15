@@ -131,8 +131,11 @@ class Gutenberg
 			);
 
 			foreach ($block_styles as $block_style) {
+				if (empty($min) && strpos($block_style, '.min')) {
+					continue;
+				}
 				wp_enqueue_block_style(
-					$block_namespace . '/' . $block_style,
+					$block_namespace . '/' . str_replace('.min', '', $block_style),
 					array(
 						'handle' => "{$block_namespace}-{$block_style}-styles",
 						'src'    => get_theme_file_uri("assets/styles/blocks/{$block_namespace}/{$block_style}{$min}.css"),
