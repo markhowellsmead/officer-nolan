@@ -58,7 +58,6 @@ class Theme
 				Block\CommentAuthorName::class,
 
 				Block\Menu::class,
-				Block\PrimaryMedia::class,
 				Package\Assets::class,
 				Package\Gutenberg::class,
 				Package\Navigation::class,
