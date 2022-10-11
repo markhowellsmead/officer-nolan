@@ -1,3 +1,7 @@
 @import 'breakpoints';
 @import 'flood';
 @import 'stack';
+
+body {
+	--image-border-radius: 5px;
+}

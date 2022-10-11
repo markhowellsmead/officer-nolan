@@ -6,6 +6,10 @@
 			aspect-ratio: auto;
 		}
 
+		body.category-video & {
+			aspect-ratio: 16/9;
+		}
+
 		a,
 		img {
 			height: 100%;

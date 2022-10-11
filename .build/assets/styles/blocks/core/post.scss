@@ -1,0 +1,5 @@
+.wp-block-post {
+	&.status-private {
+		opacity: 0.5;
+	}
+}

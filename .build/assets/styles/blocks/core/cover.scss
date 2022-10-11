@@ -3,17 +3,22 @@
 }
 
 .wp-block-cover {
-	&__inner-container {
-		.alignwide > & {
-			max-width: 720px;
-			margin-right: auto !important;
-			width: 100% !important;
-		}
-		.alignfull > & {
-			max-width: 1470px;
-			margin-left: auto !important;
-			margin-right: auto !important;
-			width: 100% !important;
-		}
-	}
+	border-radius: var(--image-border-radius);
+	overflow: hidden;
 }
+
+// .wp-block-cover {
+// 	&__inner-container {
+// 		.alignwide > & {
+// 			max-width: 720px;
+// 			margin-right: auto !important;
+// 			width: 100% !important;
+// 		}
+// 		.alignfull > & {
+// 			max-width: 1470px;
+// 			margin-left: auto !important;
+// 			margin-right: auto !important;
+// 			width: 100% !important;
+// 		}
+// 	}
+// }

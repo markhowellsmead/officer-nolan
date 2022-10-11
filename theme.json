@@ -2,53 +2,37 @@
 	"customTemplates": [
 		{
 			"name": "blank",
-			"postTypes": [
-				"page",
-				"post"
-			],
+			"postTypes": ["page", "post"],
 			"title": "Blank"
 		},
 		{
 			"name": "no-title",
-			"postTypes": [
-				"page",
-				"post"
-			],
+			"postTypes": ["page", "post"],
 			"title": "No Title"
 		},
 		{
 			"name": "page-cover",
-			"postTypes": [
-				"page"
-			],
+			"postTypes": ["page"],
 			"title": "Page (Cover Image)"
 		},
 		{
 			"name": "single-no-thumbnail",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (no thumbnail)"
 		},
 		{
 			"name": "single-square-tall",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (tall/square image)"
 		},
 		{
 			"name": "single-panorama",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (panorama image)"
 		},
 		{
 			"name": "single-cover",
-			"postTypes": [
-				"post"
-			],
+			"postTypes": ["post"],
 			"title": "Single Post (Cover Image)"
 		}
 	],
@@ -60,26 +44,17 @@
 			"defaultPalette": false,
 			"duotone": [
 				{
-					"colors": [
-						"#000",
-						"#004ba6"
-					],
+					"colors": ["#000", "#004ba6"],
 					"name": "Black and Primary",
 					"slug": "black-and-primary"
 				},
 				{
-					"colors": [
-						"#000",
-						"#0099ff"
-					],
+					"colors": ["#000", "#0099ff"],
 					"name": "Black and Secondary",
 					"slug": "black-and-secondary"
 				},
 				{
-					"colors": [
-						"#000",
-						"#00cccc"
-					],
+					"colors": ["#000", "#00cccc"],
 					"name": "Black and Tertiary",
 					"slug": "black-and-tertiary"
 				}
@@ -128,6 +103,11 @@
 					"slug": "dark-gray"
 				},
 				{
+					"color": "#888",
+					"name": "Mid gray",
+					"slug": "mid-gray"
+				},
+				{
 					"color": "#f0f0f0",
 					"name": "Pale gray",
 					"slug": "pale-gray"
@@ -138,7 +118,7 @@
 					"slug": "primary-verylight"
 				},
 				{
-					"color": "#f7f7f7",
+					"color": "#f3f4f7",
 					"name": "Body background",
 					"slug": "body-background"
 				},
@@ -172,14 +152,7 @@
 			"wideSize": "1470px"
 		},
 		"spacing": {
-			"units": [
-				"px",
-				"em",
-				"rem",
-				"vh",
-				"vw",
-				"%"
-			]
+			"units": ["px", "em", "rem", "vh", "vw", "%"]
 		},
 		"typography": {
 			"dropCap": false,
@@ -286,7 +259,7 @@
 				},
 				{
 					"name": "Small",
-					"size": "16px",
+					"size": "15px",
 					"slug": "small"
 				},
 				{
@@ -415,7 +388,12 @@
 			},
 			"core/group": {
 				"spacing": {
-					"padding": "0px"
+					"padding": {
+						"bottom": "0",
+						"left": "0",
+						"right": "0",
+						"top": "0"
+					}
 				}
 			},
 			"core/heading": {
