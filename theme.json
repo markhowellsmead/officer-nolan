@@ -103,6 +103,11 @@
 					"slug": "dark-gray"
 				},
 				{
+					"color": "#888",
+					"name": "Mid gray",
+					"slug": "mid-gray"
+				},
+				{
 					"color": "#f0f0f0",
 					"name": "Pale gray",
 					"slug": "pale-gray"
@@ -254,7 +259,7 @@
 				},
 				{
 					"name": "Small",
-					"size": "16px",
+					"size": "15px",
 					"slug": "small"
 				},
 				{
