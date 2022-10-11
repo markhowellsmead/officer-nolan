@@ -2,15 +2,8 @@
   margin-top: calc(var(--main--offset) * -1);
 }
 
-.alignwide > .wp-block-cover__inner-container {
-  max-width: 720px;
-  margin-right: auto !important;
-  width: 100% !important;
+.wp-block-cover {
+  border-radius: var(--image-border-radius);
+  overflow: hidden;
 }
-.alignfull > .wp-block-cover__inner-container {
-  max-width: 1470px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  width: 100% !important;
-}
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2NvdmVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQzs7O0FBS0M7RUFDQztFQUNBO0VBQ0E7O0FBRUQ7RUFDQztFQUNBO0VBQ0E7RUFDQSIsImZpbGUiOiJibG9ja3MvY29yZS9jb3Zlci5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2NvdmVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQzs7O0FBR0Q7RUFDQztFQUNBIiwiZmlsZSI6ImJsb2Nrcy9jb3JlL2NvdmVyLmNzcyJ9 */

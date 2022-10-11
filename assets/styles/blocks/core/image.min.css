@@ -1,1 +1,1 @@
-.wp-block-image{text-align:center}
+.wp-block-image{text-align:center}.wp-block-image img{border-radius:var(--image-border-radius)}.wp-block-image:not(.is-style-rounded) img{border-radius:var(--image-border-radius)}

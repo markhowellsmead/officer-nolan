@@ -9,4 +9,10 @@
 			padding-bottom: calc(var(--wp--style--block-gap) * 2);
 		}
 	}
+
+	.wp-block-post-content > & {
+		&.alignwide:first-child {
+			max-width: calc(1470px + var(--wp--style--block-gap) * 4);
+		}
+	}
 }

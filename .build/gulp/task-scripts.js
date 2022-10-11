@@ -40,39 +40,24 @@ export const task = (config) => {
 								use: [
 									{
 										loader: 'style-loader',
-										options: {
-											sourceMap: false,
-										},
 									},
 									{
 										loader: 'css-loader',
-										options: {
-											sourceMap: false,
-										},
 									},
 								],
 							},
 							{
 								test: /\.scss$/i,
-								exclude: /node_modules/,
+								//exclude: /node_modules/,
 								use: [
 									{
 										loader: 'style-loader',
-										options: {
-											sourceMap: false,
-										},
 									},
 									{
 										loader: 'css-loader',
-										options: {
-											sourceMap: false,
-										},
 									},
 									{
 										loader: 'sass-loader',
-										options: {
-											sourceMap: false,
-										},
 									},
 								],
 							},

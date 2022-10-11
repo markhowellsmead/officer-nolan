@@ -2,4 +2,10 @@
   text-align: center;
   /* Make sure narrower images are centered */
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2ltYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztBQUNBIiwiZmlsZSI6ImJsb2Nrcy9jb3JlL2ltYWdlLmNzcyJ9 */
+.wp-block-image img {
+  border-radius: var(--image-border-radius);
+}
+.wp-block-image:not(.is-style-rounded) img {
+  border-radius: var(--image-border-radius);
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL2ltYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQztBQUNBOztBQUVBO0VBQ0M7O0FBR0Q7RUFDQyIsImZpbGUiOiJibG9ja3MvY29yZS9pbWFnZS5jc3MifQ== */
