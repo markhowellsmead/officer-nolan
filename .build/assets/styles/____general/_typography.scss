@@ -3,8 +3,6 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 0.01em;
-	font-weight: 450;
-	font-variation-settings: 'wght' 450;
 	font-size: clamp(100%, calc(0.94rem + 0.31vw), 110%);
 }
 
@@ -29,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-variation-settings: 'wght' 550;
+	font-weight: var(--wp--custom--font-weight--semi-bold);
 }
 
 h1 a,
