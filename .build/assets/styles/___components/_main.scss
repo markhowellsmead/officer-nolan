@@ -6,10 +6,4 @@
 	body.post-template-single-cover & {
 		--main--offset: 0;
 	}
-
-	body.archive & {
-		@media screen and (min-width: 1440px) {
-			--main--offset: 6vw;
-		}
-	}
 }
