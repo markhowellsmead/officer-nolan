@@ -53,6 +53,14 @@ figure {
 	}
 }
 
+@supports (aspect-ratio: 794 / 51) {
+	hr.is-style-wide {
+		background: url('../img/birds-on-a-wire.svg') center/contain no-repeat;
+		aspect-ratio: 794 / 51;
+		border-bottom: none;
+	}
+}
+
 a,
 button,
 input:focus,
