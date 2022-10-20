@@ -1,6 +1,7 @@
 .wp-block-query-title .c-archive__titleprefix {
   display: block;
-  font-size: var(--wp--preset--font-size--ext-small);
+  font-size: var(--wp--preset--font-size--max-24);
   font-weight: var(--wp--custom--font-weight--medium);
+  color: var(--wp--preset--color--mid-gray);
 }
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3F1ZXJ5LXRpdGxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0M7RUFDQztFQUNBO0VBQ0EiLCJmaWxlIjoiYmxvY2tzL2NvcmUvcXVlcnktdGl0bGUuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJsb2Nrcy9jb3JlL3F1ZXJ5LXRpdGxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0M7RUFDQztFQUNBO0VBQ0E7RUFDQSIsImZpbGUiOiJibG9ja3MvY29yZS9xdWVyeS10aXRsZS5jc3MifQ== */
