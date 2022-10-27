@@ -1,0 +1,213 @@
+@mixin flood {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+@mixin proportional-image-figure {
+	@supports (object-fit: cover) {
+		@include flood;
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+
+		img {
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+	}
+}
+
+@mixin proportional-image-wrapper {
+	position: relative;
+	height: 100%;
+	@supports (aspect-ratio: 1 / 1) {
+		height: auto;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		padding-bottom: percentage(calc(2 / 3));
+		@supports (aspect-ratio: 1/1) {
+			padding-bottom: 0;
+		}
+	}
+
+	&.is-aspect--16_9::before {
+		padding-bottom: percentage(calc(9 / 16));
+		@supports (aspect-ratio: 16 / 9) {
+			padding-bottom: 0;
+			aspect-ratio: 16 / 9;
+		}
+	}
+
+	&.is-aspect--3x2::before {
+		padding-bottom: percentage(calc(2 / 3));
+		@supports (aspect-ratio: 3 / 2) {
+			padding-bottom: 0;
+			aspect-ratio: 3 / 2;
+		}
+	}
+
+	&.is-aspect--4x3::before {
+		padding-bottom: percentage(calc(3 / 4));
+		@supports (aspect-ratio: 4 / 3) {
+			padding-bottom: 0;
+			aspect-ratio: 4 / 3;
+		}
+	}
+
+	&.is-aspect--5x4::before {
+		padding-bottom: percentage(calc(4 / 5));
+		@supports (aspect-ratio: 5 / 4) {
+			padding-bottom: 0;
+			aspect-ratio: 5 / 4;
+		}
+	}
+
+	&.is-aspect--25_10::before {
+		padding-bottom: percentage(calc(10 / 25));
+		@supports (aspect-ratio: 25 / 10) {
+			padding-bottom: 0;
+			aspect-ratio: 25 / 10;
+		}
+	}
+
+	&.is-aspect--235_10::before {
+		padding-bottom: percentage(calc(100 / 235));
+		@supports (aspect-ratio: 235 / 100) {
+			padding-bottom: 0;
+			aspect-ratio: 235 / 100;
+		}
+	}
+
+	&.is-aspect--3x1::before {
+		padding-bottom: percentage(calc(1 / 3));
+		@supports (aspect-ratio: 3 / 1) {
+			padding-bottom: 0;
+			aspect-ratio: 3 / 1;
+		}
+	}
+
+	&.is-aspect--4x1::before {
+		padding-bottom: percentage(calc(1 / 4));
+		@supports (aspect-ratio: 4 / 1) {
+			padding-bottom: 0;
+			aspect-ratio: 4 / 1;
+		}
+	}
+
+	&.is-aspect--2x3::before {
+		padding-bottom: percentage(calc(3 / 2));
+		@supports (aspect-ratio: 2 / 3) {
+			padding-bottom: 0;
+			aspect-ratio: 2 / 3;
+		}
+	}
+
+	&.is-aspect--3x4::before {
+		padding-bottom: percentage(calc(4 / 3));
+		@supports (aspect-ratio: 3 / 4) {
+			padding-bottom: 0;
+			aspect-ratio: 3 / 4;
+		}
+	}
+
+	&.is-aspect--4x5::before {
+		padding-bottom: percentage(calc(5 / 4));
+		@supports (aspect-ratio: 4 / 5) {
+			padding-bottom: 0;
+			aspect-ratio: 4 / 5;
+		}
+	}
+}
+
+.wp-block-mhm-image {
+	@include proportional-image-wrapper;
+
+	&__figure {
+		@include proportional-image-figure;
+	}
+
+	&__figcaption {
+		@include flood;
+		z-index: 2;
+		max-width: 100%;
+		top: auto;
+		padding-left: 1rem;
+		padding-bottom: 1rem;
+		@media screen and (min-width: 768px) {
+			padding-left: 2rem;
+		}
+
+		&--textshadow {
+			text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	img {
+		outline: none;
+		pointer-events: none;
+		body.logged-in & {
+			pointer-events: all;
+		}
+	}
+
+	&.alignwide {
+		.wp-block-mhm-image {
+			&__figure {
+				left: 1rem;
+				right: 1rem;
+				width: calc(100% - 2rem);
+
+				@media screen and (min-width: 1024px) {
+					left: 0;
+					right: 0;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&.alignfull {
+		& + .wp-block-cover.alignfull,
+		& + .wp-block-group.alignfull {
+			margin-top: 0;
+		}
+	}
+}
+
+// @include context-edit {
+// 	.wp-block-mhm-image {
+// 		.c-imageselector {
+// 			@supports (object-fit: cover) {
+// 				@include flood;
+// 				object-fit: cover;
+// 				object-position: center;
+// 				width: 100%;
+// 				height: 100%;
+// 				overflow: hidden;
+
+// 				&__figure {
+// 					height: 100%;
+// 				}
+
+// 				img {
+// 					object-fit: cover;
+// 					object-position: center;
+// 					width: 100%;
+// 					height: 100%;
+// 					overflow: hidden;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
