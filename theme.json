@@ -534,6 +534,7 @@
 			},
 			"core/separator": {
 				"color": {
+					"background": "var:preset|color|body-background",
 					"text": "var(--wp--preset--color--dark-gray)"
 				},
 				"typography": {
@@ -668,5 +669,5 @@
 		}
 	],
 	"version": 2,
-	"$schema": "https://schemas.wp.org/wp/6.0/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.1/theme.json"
 }
